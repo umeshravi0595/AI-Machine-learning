@@ -6,7 +6,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-os.environ["GROQ_API_KEY"]=os.getenv("GROQ_API_KEY")
+# os.environ["GROQ_API_KEY"]=os.getenv("GROQ_API_KEY")
+GROQ_API_KEY="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"
 
 model=ChatGroq(model="gemma2-9b-it")
 
