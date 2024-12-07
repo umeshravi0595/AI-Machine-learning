@@ -1,4 +1,5 @@
 langchain
+pyodbc
 python-dotenv
 ipykernel
 langchain-community
