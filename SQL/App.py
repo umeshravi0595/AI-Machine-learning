@@ -46,7 +46,7 @@ def configure_db(dbi_uri,server_name=None,database_name=None):
       if not(server_name and database_name):
           st.error("Please provide all MySQL connection details.")
           st.stop()
-    connection_string = f"mssql+pyodbc://@{server_name}/{database_name}?driver=ODBC Driver 17 for SQL Server;Connect Timeout=30;"
+    connection_string = f"mssql+pyodbc://@{server_name}/{database_name}?driver=ODBC Driver 17 for SQL Server;Connect Timeout=60;"
     return SQLDatabase(create_engine(connection_string))
       
 if db_uri==MYSQL:
